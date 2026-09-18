@@ -1,0 +1,11 @@
+cxx = g++
+cxxflags = -std=c++20 -Wall -Iinclude -DFMT_HEADER_ONLY
+
+rule compile
+  command = $cxx $cxxflags -c $in -o $out
+
+rule link
+  command = $cxx $in -o $out
+
+build build/main.o: compile src/main.cpp
+build JustSome_CoolGuy.exe: link build/main.o

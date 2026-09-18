@@ -1,0 +1,12 @@
+/build/
+/.vscode/
+/*.exe
+/*.out
+/*.o
+/CMakeCache.txt
+/CMakeFiles/
+/cmake-build-debug/
+vcpkg_installed/
+conan.lock
+conan_provider.cmake
+Output/
